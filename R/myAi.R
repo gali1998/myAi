@@ -32,6 +32,6 @@ ask_gpt<- function(api_key, message = "", model ="gpt-4o-mini") {
 
 #' @export
 ask_claude <- function(api_key, message = "", model = "claude-2") {
-  response <- claudeR(prompt = "What is the capital of France?", model = model, api_key = key)
+  response <- claudeR::claudeR(prompt = "What is the capital of France?", model = model, api_key = api_key)
   return(response)
 }
