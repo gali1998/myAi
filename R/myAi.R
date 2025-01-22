@@ -26,7 +26,6 @@ ask_gpt<- function(api_key, message = "", model ="gpt-4o-mini") {
 
 }
 
-#' @import claudeR
 #' @export
 ask_claude <- function(api_key, message = "", model = "claude-2") {
   response <- claudeR::claudeR(prompt = message, model = model, api_key = api_key)
