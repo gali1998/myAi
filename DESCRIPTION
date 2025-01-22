@@ -13,4 +13,4 @@ Imports:
     claudeR (>= 0.0.0.9000),
     openai
 Remotes:  
-    github::ytvelez/claudeR
+    github::yrvelez/claudeR
