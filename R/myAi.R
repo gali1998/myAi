@@ -33,14 +33,7 @@ ask_gpt<- function(api_key, message = "", model ="gpt-4o-mini") {
 #' @import claudeR
 #' @export
 ask_claude <- function(api_key, message = "", model = "claude-2") {
-  suppressMessages(suppressWarnings(
-    install.packages("remotes", quietly = TRUE)
-  ))
-  
-  # Install 'claudeR' from GitHub quietly
-  suppressMessages(suppressWarnings(
-    remotes::install_github("yrvelez/claudeR", quiet = TRUE)
-  ))
+  #remotes::install_github("yrvelez/claudeR")
   response <- claudeR::claudeR(prompt = message, model = model, api_key = api_key)
   return(response)
 }
