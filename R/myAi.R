@@ -13,10 +13,6 @@
 #   Check Package:             'Cmd + Shift + E'
 #   Test Package:              'Cmd + Shift + T'
 
-hello <- function() {
-  print("Hello, world!")
-}
-
 #' @export
 ask_gpt<- function(api_key, message = "", model ="gpt-4o-mini") {
   messages = list(
@@ -33,7 +29,6 @@ ask_gpt<- function(api_key, message = "", model ="gpt-4o-mini") {
 #' @import claudeR
 #' @export
 ask_claude <- function(api_key, message = "", model = "claude-2") {
-  #remotes::install_github("yrvelez/claudeR")
   response <- claudeR::claudeR(prompt = message, model = model, api_key = api_key)
   return(response)
 }

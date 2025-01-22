@@ -1,12 +1,9 @@
-\name{hello}
-\alias{hello}
-\title{Hello, World!}
+\name{myAi}
+\alias{myAi}
+\title{myAi}
 \usage{
-hello()
+ask_gpt()
 }
 \description{
-Prints 'Hello, world!'.
-}
-\examples{
-hello()
+gets gpt response.
 }
